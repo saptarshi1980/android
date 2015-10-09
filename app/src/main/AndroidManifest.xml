@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.dpl.dplltapp" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2" >
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".UserHome"
+            android:label="@string/title_activity_user_home" >
+        </activity>
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/title_activity_dashboard" >
+        </activity>
+        <activity
+            android:name=".Consumption"
+            android:label="@string/title_activity_consumption" >
+        </activity>
+        <activity
+            android:name=".Drawer"
+            android:label="@string/title_activity_drawer" >
+        </activity>
+        <activity
+            android:name=".CurrentBill"
+            android:label="@string/title_activity_current_bill" >
+        </activity>
+        <activity
+            android:name=".TariffView"
+            android:label="@string/title_activity_tariff_view" >
+        </activity>
+        <activity
+            android:name=".BillHistory"
+            android:label="@string/title_activity_bill_history" >
+        </activity>
+        <activity
+            android:name=".ChooseUpdate"
+            android:label="@string/title_activity_choose_update" >
+        </activity>
+        <activity
+            android:name=".UpdateMobile"
+            android:label="@string/title_activity_update_mobile" >
+        </activity>
+        <activity
+            android:name=".UpdateEmail"
+            android:label="@string/title_activity_update_email" >
+        </activity>
+        <activity
+            android:name=".BillCalculate"
+            android:label="@string/title_activity_bill_calculate" >
+        </activity>
+        <activity
+            android:name=".Payment"
+            android:label="@string/title_activity_payment" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp"
+    android:background="#ad655f">
+
+    <TextView
+      android:id="@+id/TextFirst"
+      android:layout_height="wrap_content"
+      android:layout_width="0dp"
+      android:layout_weight="0.53"
+      android:text="First"/>
+
+
+
+    <TextView
+      android:id="@+id/TextSecond"
+      android:layout_height="wrap_content"
+      android:layout_width="0dp"
+      android:layout_weight="0.53"
+      android:text="Second"/>
+      <TextView 
+      android:id="@+id/TextThird"
+      android:layout_height="wrap_content"
+      android:layout_width="0dp"
+      android:layout_weight="0.30"
+      android:text="Third"/>
+
+</LinearLayout>
+
