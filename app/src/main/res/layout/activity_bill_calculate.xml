@@ -50,7 +50,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="View Vill Amount"
+            android:text="Calculate Bill Amount"
             android:id="@+id/button3"
             android:layout_below="@+id/editText4"
             android:layout_alignParentRight="true"

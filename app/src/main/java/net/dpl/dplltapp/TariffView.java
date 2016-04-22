@@ -89,7 +89,7 @@ public class TariffView extends AppCompatActivity {
                         temp.put(FIRST_COLUMN, head);
                         String consumption = c.getString("consumption");
                         temp.put(SECOND_COLUMN, consumption);
-                        String rate = "Rs "+c.getString("rate");
+                        String rate = c.getString("rate");
                         temp.put(THIRD_COLUMN, rate);
                         TariffView.this.list.add(temp);
                     }

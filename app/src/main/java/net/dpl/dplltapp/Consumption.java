@@ -16,6 +16,8 @@ import java.util.HashMap;
 
 public class Consumption extends AppCompatActivity {
     String name,conNo,firstUnit,secondUnit,thirdUnit,firstMonth,secondMonth,thirdMonth;
+
+
     private static final String REGISTER_URL = "http://thedpl.in/billappws/billinfo/ConPattern";
     GraphView graph;
     @Override
@@ -52,13 +54,13 @@ public class Consumption extends AppCompatActivity {
                 System.out.println("Response from Post Execute-"+s);
                 extractString(s);
                 BarGraphSeries<DataPoint> series = new BarGraphSeries<DataPoint>(new DataPoint[] {
-                        new DataPoint(1,Integer.parseInt(firstUnit)),
+                        new DataPoint(1,Integer.parseInt(thirdUnit)),
                         new DataPoint(2, Integer.parseInt(secondUnit)),
-                        new DataPoint(3, Integer.parseInt(thirdUnit)),
+                        new DataPoint(3, Integer.parseInt(firstUnit)),
 
                 });
                 StaticLabelsFormatter staticLabelsFormatter = new StaticLabelsFormatter(graph);
-                staticLabelsFormatter.setHorizontalLabels(new String[]{firstMonth, secondMonth, thirdMonth});
+                staticLabelsFormatter.setHorizontalLabels(new String[]{thirdMonth, secondMonth, firstMonth});
                 graph.getGridLabelRenderer().setLabelFormatter(staticLabelsFormatter);
                 graph.addSeries(series);
                 series.setSpacing(10);
@@ -115,6 +117,21 @@ public class Consumption extends AppCompatActivity {
             }
 
         }
+
+
+        if(Consumption.this.firstMonth==null || Consumption.this.firstUnit==null ){
+            Consumption.this.firstMonth="N/A";
+            Consumption.this.firstUnit="0";
+        }
+        else if(Consumption.this.secondMonth==null || Consumption.this.secondUnit==null ){
+            Consumption.this.secondMonth="N/A";
+            Consumption.this.secondUnit="0";
+        }
+        else if(Consumption.this.thirdMonth==null || Consumption.this.thirdUnit==null ){
+            Consumption.this.thirdMonth="N/A";
+            Consumption.this.thirdUnit="0";
+        }
+
 
 
 
