@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="net.dpl.dplltapp.Disclaimer">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1"
+        android:background="@drawable/customborder">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DISCLAIMER:You will be redirected to a Third Party Payment Gateway Site . You are about to access a site, the accuracy or completeness of the materials or the reliability of any advice, opinion, statement or other information displayed is not warranted by DPL. DPL and its affiliates, employees expressly disclaim any liability for any deficiency in the services of the service provider whose site you are about to access. Niether DPL nor any of its affiliates, employees will be liable to or have any responsibility of any kind for any loss that you incur in the event of any deficiency in the services of the service provider, failure or disruption of the site of the service provider, or resulting from the act or ommision of any other party involved in making this site or the data contained therein available to you, or from any other cause related to your access to, inability to access, or use of the site or these materials in accordance thereto DPL and all its related parties described hereinabove stand indemnified from all proceedings or matters arising thereto. Please accept this disclaimer. "
+            android:id="@+id/textView22"
+            android:layout_weight="0.15" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:id="@+id/proceed"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
