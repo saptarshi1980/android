@@ -11,8 +11,8 @@ android {
         applicationId "net.dpl.dplltapp"
         minSdkVersion 15
         targetSdkVersion 23
-        versionCode 4
-        versionName "4"
+        versionCode 5
+        versionName "5"
     }
     buildTypes {
         release {

@@ -124,7 +124,8 @@ public class UserHome extends AppCompatActivity implements View.OnClickListener{
 
         if(v == iv8){
 
-            Intent intent = new Intent(getApplicationContext(),Payment.class);
+            Intent intent = new Intent(getApplicationContext(),Disclaimer.class);
+            intent.putExtra("conNo",conNo);
             startActivity(intent);
         }
 

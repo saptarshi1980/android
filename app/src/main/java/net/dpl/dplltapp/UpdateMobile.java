@@ -41,7 +41,7 @@ public class UpdateMobile extends AppCompatActivity implements View.OnClickListe
 public void onClick(View v) {
         if(v == submit){
             try{
-                int mobileInt=Integer.parseInt(et.getText().toString());
+                //int mobileInt=et.getText().toString();
                 if(et.getText().toString().length()==10){
                     mobile=et.getText().toString();
                     register(conNo, mobile);

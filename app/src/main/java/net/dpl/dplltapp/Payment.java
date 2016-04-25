@@ -8,14 +8,18 @@ import android.webkit.WebView;
 
 public class Payment extends AppCompatActivity {
 
+    String conNo;
+
     private WebView mWebView = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
+        Bundle extras = getIntent().getExtras();
+        conNo = extras.getString("conNo");
         mWebView = (WebView) findViewById(R.id.webView);
         mWebView.getSettings().setJavaScriptEnabled(true);
-        mWebView.loadUrl("http://thedpl.in/mydpl");
+        mWebView.loadUrl("http://thedpl.in/mydpl/InfoHandlerApp.dpl?con_no="+conNo);
 
        /* mWebView.setWebViewClient(new WebViewClient(){
                public boolean shouldOverrideUrlLoading(WebView view, String url) {
