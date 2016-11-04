@@ -19,7 +19,8 @@ public class Payment extends AppCompatActivity {
         conNo = extras.getString("conNo");
         mWebView = (WebView) findViewById(R.id.webView);
         mWebView.getSettings().setJavaScriptEnabled(true);
-        mWebView.loadUrl("http://thedpl.in/mydpl/InfoHandlerApp.dpl?con_no="+conNo);
+        mWebView.loadUrl("https://thedpl.in/mydpl/InfoHandlerApp.dpl?con_no="+conNo);
+        //mWebView.loadUrl("http://thedpl.in/mydpl");
 
        /* mWebView.setWebViewClient(new WebViewClient(){
                public boolean shouldOverrideUrlLoading(WebView view, String url) {

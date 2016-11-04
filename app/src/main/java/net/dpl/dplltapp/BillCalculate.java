@@ -23,7 +23,7 @@ public class BillCalculate extends AppCompatActivity implements View.OnClickList
     EditText unit;
     Button submit;
     String energyCharge, meterRent, fixedCharge, mvca, duty,totalBill;
-    private static final String REGISTER_URL = "http://thedpl.in/billappws/billinfo/CalculateBill";
+    private static final String REGISTER_URL = "https://thedpl.in/billappws/billinfo/CalculateBill";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

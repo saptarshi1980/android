@@ -20,7 +20,7 @@ public class TariffView extends AppCompatActivity {
     public static final String SECOND_COLUMN = "Second";
     public static final String THIRD_COLUMN = "Third";
     public static final String FOURTH_COLUMN = "Fourth";
-    private static final String REGISTER_URL = "http://thedpl.in/billappws/billinfo/GetTariff";
+    private static final String REGISTER_URL = "https://thedpl.in/billappws/billinfo/GetTariff";
     String conNo, conName;
 
 

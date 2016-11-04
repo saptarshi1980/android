@@ -42,7 +42,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
 
 
     //private static final String REGISTER_URL = "http://192.168.30.3/billappws/billinfo/GetFeeds";
-    private static final String REGISTER_URL = "http://thedpl.in/billappws/billinfo/GetFeeds";
+    private static final String REGISTER_URL = "https://thedpl.in/billappws/billinfo/GetFeeds";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

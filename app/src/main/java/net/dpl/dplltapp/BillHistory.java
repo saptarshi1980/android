@@ -42,7 +42,7 @@ public class BillHistory extends AppCompatActivity implements View.OnClickListen
 
 
     //private static final String REGISTER_URL = "http://192.168.30.3/billappws/billinfo/GetFeeds";
-    private static final String REGISTER_URL = "http://thedpl.in/billappws/billinfo/BillHistory";
+    private static final String REGISTER_URL = "https://thedpl.in/billappws/billinfo/BillHistory";
     String conNo,name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

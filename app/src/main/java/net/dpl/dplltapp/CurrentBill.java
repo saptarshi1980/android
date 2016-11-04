@@ -1,9 +1,12 @@
 package net.dpl.dplltapp;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,12 +18,15 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class CurrentBill extends AppCompatActivity {
+public class CurrentBill extends AppCompatActivity implements View.OnClickListener {
     String varPartyCode,conNo,name,varBillPeriod,varPrevReading,varCurrReading,varMulFactor,varMeterStatus,varUnitPerMonth,varBillPerMonth,varDueDate1,varDueDate2;
     ArrayList<Consumer> consumerList=new ArrayList<Consumer>();
     ListView listView1;
     TextView conName,billPeriod,previousReading,currentReading,mulFactor,meterStatus,unitPerMonth,billPerMonth,dueDate1,dueDate2;
-    private static final String REGISTER_URL = "http://thedpl.in/billappws/billinfo/CurrBill";
+    private static final String REGISTER_URL = "https://thedpl.in/billappws/billinfo/CurrBill";
+    private static final String REGISTER_URL_BILL = "https://thedpl.in/billappws/billinfo/DownloadBill";
+
+    ImageView iv1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +37,8 @@ public class CurrentBill extends AppCompatActivity {
         name=extras.getString("conName");
         conName=(TextView)findViewById(R.id.textView3);
         conName.setText("Consumer Name: "+name);
+        iv1=(ImageView)findViewById(R.id.imageView6);
+        iv1.setOnClickListener(this);
         billPeriod=(TextView)findViewById(R.id.textView5);
         previousReading=(TextView)findViewById(R.id.textView8);
         currentReading=(TextView)findViewById(R.id.textView9);
@@ -113,6 +121,27 @@ public class CurrentBill extends AppCompatActivity {
 
         GetInformation ru = new GetInformation();
         ru.execute();
+    }
+
+    @Override
+    public void onClick(View v) {
+
+        /*if(v == iv1){
+
+
+
+
+
+
+        }
+
+*/
+
+        Intent intent = new Intent(getApplicationContext(),DownloadBill.class);
+        intent.putExtra("conNo",conNo);
+        intent.putExtra("billPrd",varBillPeriod);
+        startActivity(intent);
+
     }
 
 

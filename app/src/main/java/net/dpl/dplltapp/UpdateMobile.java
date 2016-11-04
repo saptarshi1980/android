@@ -18,8 +18,8 @@ public class UpdateMobile extends AppCompatActivity implements View.OnClickListe
         Button submit;
         TextView tv1;
 
-        private static final String REGISTER_URL = "http://thedpl.in/billappws/billinfo/UpdateMobile";
-        private static final String REGISTER_URL_MOBILE = "http://thedpl.in/billappws/billinfo/FetchMobile";
+        private static final String REGISTER_URL = "https://thedpl.in/billappws/billinfo/UpdateMobile";
+        private static final String REGISTER_URL_MOBILE = "https://thedpl.in/billappws/billinfo/FetchMobile";
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {

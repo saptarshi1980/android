@@ -21,11 +21,10 @@
         android:layout_height="wrap_content"
         android:background="@drawable/customborder"
         android:id="@+id/rl"
-        android:layout_marginTop="10.0dip"
         android:nestedScrollingEnabled="true"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
 
         <TextView
             android:layout_marginTop="10.0dip"
@@ -165,6 +164,17 @@
         android:id="@+id/textView4"
         android:layout_below="@+id/imageView14"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:layout_above="@+id/rl"
+        android:src="@drawable/download"
+        android:layout_below="@+id/imageView14"
+        android:layout_alignRight="@+id/rl"
+        android:layout_alignEnd="@+id/rl"
+        android:clickable="true" />
 
 
 </RelativeLayout>

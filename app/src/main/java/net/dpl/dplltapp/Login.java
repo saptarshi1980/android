@@ -22,7 +22,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
 
     private Button buttonLogin;
     private EditText consumerNo,meterNo;
-    private static final String REGISTER_URL = "http://thedpl.in/billappws/billinfo/ConsAuth";
+    private static final String REGISTER_URL = "https://thedpl.in/billappws/billinfo/ConsAuth";
     ArrayList<Consumer> consumerList=new ArrayList<Consumer>();
 
     @Override

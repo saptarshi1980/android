@@ -17,8 +17,8 @@ public class UpdateEmail extends AppCompatActivity implements View.OnClickListen
     String emailId,conNo,existingmail;
     TextView tv1;
     Button submit;
-    private static final String REGISTER_URL = "http://thedpl.in/billappws/billinfo/UpdateEmail";
-    private static final String REGISTER_URL_EMAIL = "http://thedpl.in/billappws/billinfo/FetchEmail";
+    private static final String REGISTER_URL = "https://thedpl.in/billappws/billinfo/UpdateEmail";
+    private static final String REGISTER_URL_EMAIL = "https://thedpl.in/billappws/billinfo/FetchEmail";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

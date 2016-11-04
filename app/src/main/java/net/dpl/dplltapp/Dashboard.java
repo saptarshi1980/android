@@ -17,7 +17,7 @@ public class Dashboard extends AppCompatActivity {
 
     TextView consumerName,partyCode,category,tariff,phase,demand,mf,reference,address;
 
-    private static final String REGISTER_URL = "http://thedpl.in/billappws/billinfo/Dashboard";
+    private static final String REGISTER_URL = "https://thedpl.in/billappws/billinfo/Dashboard";
 
     String varConsumerName ;
     String varPartyCode;

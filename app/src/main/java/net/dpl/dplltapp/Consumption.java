@@ -18,7 +18,7 @@ public class Consumption extends AppCompatActivity {
     String name,conNo,firstUnit,secondUnit,thirdUnit,firstMonth,secondMonth,thirdMonth;
 
 
-    private static final String REGISTER_URL = "http://thedpl.in/billappws/billinfo/ConPattern";
+    private static final String REGISTER_URL = "https://thedpl.in/billappws/billinfo/ConPattern";
     GraphView graph;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
